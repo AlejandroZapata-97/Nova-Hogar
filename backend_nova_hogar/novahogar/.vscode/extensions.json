@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "vscode.java-core",
+        "vscode.java-debug",
+        "vscode.java-test",
+        "vscode.gradle",
+        "msjsdiag.debugger-for-chrome",
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint"
+    ]
+}

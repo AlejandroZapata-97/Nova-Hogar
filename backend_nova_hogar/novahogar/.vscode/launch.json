@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "▶ Backend Spring Boot",
+            "request": "launch",
+            "mainClass": "com.novahogar.inventario.InventarioApplication",
+            "projectName": "inventario",
+            "cwd": "${workspaceFolder}/inventario"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "▶ Frontend (npm start)",
+            "command": "npm start",
+            "cwd": "${workspaceFolder}/frontend"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "🌐 Chrome - Frontend",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/frontend",
+            "preLaunchTask": "npm start frontend"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "🚀 Full Stack (Backend + Frontend)",
+            "configurations": ["▶ Backend Spring Boot", "▶ Frontend (npm start)"],
+            "stopOnEntry": false,
+            "preLaunchTask": null
+        }
+    ]
+}
