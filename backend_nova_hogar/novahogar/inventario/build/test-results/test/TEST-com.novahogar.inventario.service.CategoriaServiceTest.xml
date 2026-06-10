@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.novahogar.inventario.service.CategoriaServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-05T19:17:53.709Z" hostname="ANDRES" time="9.945">
+  <properties/>
+  <testcase name="listarCategorias_DeberiaRetornarListaDeCategorias()" classname="com.novahogar.inventario.service.CategoriaServiceTest" time="9.85"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
