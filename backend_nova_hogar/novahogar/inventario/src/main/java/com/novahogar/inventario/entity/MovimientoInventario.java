@@ -2,10 +2,10 @@ package com.novahogar.inventario.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
+import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
-@Data @Entity
+@Data @Entity @NoArgsConstructor
 
 public class MovimientoInventario {
     @Id

@@ -3,6 +3,7 @@ package com.novahogar.inventario.controller;
 import com.novahogar.inventario.entity.MovimientoInventario;
 import com.novahogar.inventario.repository.MovimientoRepository;
 import com.novahogar.inventario.service.InventarioService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/movimientos")
 @CrossOrigin(origins = "*")
@@ -46,7 +48,7 @@ public class MovimientoInventarioController {
         }
     }
 
-    @PutMapping("/{id}")
+    @PostMapping("/{id}")
     public ResponseEntity<MovimientoInventario> actualizarMovimiento(@PathVariable Integer id, @RequestBody MovimientoInventario movimientoDetails) {
         Optional<MovimientoInventario> movimiento = movimientoRepository.findById(id);
         if (movimiento.isPresent()) {
